@@ -7,7 +7,6 @@ Poco._mod_path = PersistScriptPath
 Poco._req = function (name)
 	local __req = function(name)
 		name = Poco._mod_path .. name
-		log("poco req: " .. name)
 		local f=io.open(name,"r")
 		if f~=nil then
 			io.close(f)
