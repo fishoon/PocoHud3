@@ -1,6 +1,14 @@
 PocoHud3
 ========
+A fork of PocoHud3 that is compatible with the [Payday 2 BLT](http://paydaymods.com/download/).
 
+Installation
+---
+- Download the [Payday 2 BLT](http://paydaymods.com/download/).
+- Download the [latest release](https://github.com/JamesWilko/PocoHud3/releases/latest) and place the PocoHud3 into your mods folder.
+
+Original README.md
+---
 Payday2 Interface enhancer MOD
 
 * This MOD is not affiliated with OVERKILL (hopefully, yet).
