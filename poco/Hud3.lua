@@ -14,9 +14,9 @@ local me
 local currDir = PocoDir
 Poco.currDir = currDir
 PocoHud3Class = nil
-Poco._req (currDir..'Hud3_class.lua')
+Poco._req ('poco/Hud3_class.lua')
 if not PocoHud3Class then return end
-Poco._req (currDir..'Hud3_Options.lua')
+Poco._req ('poco/Hud3_Options.lua')
 if not PocoHud3Class.Option then return end
 local O = PocoHud3Class.Option:new()
 PocoHud3Class.O = O
@@ -137,6 +137,9 @@ function TPocoHud3:onDestroy(gameEnd)
 	self:Menu(true,true) -- Force dismiss menu
 	if( alive( self._ws ) ) then
 		managers.gui_data:destroy_workspace(self._ws)
+	end
+	if( alive( self._worldws ) ) then
+		World:newgui():destroy_workspace( self._worldws )
 	end
 end
 function TPocoHud3:AddDmgPopByUnit(sender,unit,offset,damage,death,head,dmgType)
