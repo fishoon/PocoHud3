@@ -188,7 +188,7 @@ local _vanity = {
 	language = {EN='English', DA='Dansk', DE='Deutsch', ES='Español', FR='Français',ID = 'Bahasa Indonesia', IT='Italiano',NL='Nederlands',NO='Norsk',PL='Polski',PT='Português (PT)',PT_BR='Português (BR)', RU='Русский', SV_SE='Svenska'},
 }
 ----------------------------------------------------
-local JSONFileName = Poco._mod_path .. 'poco\\hud3_config.json'
+local JSONFileName = SavePath .. 'hud3_config.json'
 local isNil = function(a)
 	return a == nil
 end

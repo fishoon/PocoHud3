@@ -6,8 +6,8 @@ local clGood =  cl.YellowGreen
 local clBad =  cl.Gold
 local isNil = function(a) return a == nil end
 local inGame = CopDamage ~= nil
-local KitsJSONFileName = Poco._mod_path .. 'poco\\hud3_kits.json'
-local KarmaJSONFileName = Poco._mod_path .. 'poco\\hud3_karma.json'
+local KitsJSONFileName = SavePath .. 'hud3_kits.json'
+local KarmaJSONFileName = SavePath .. 'hud3_karma.json'
 local LocJSONFileName = Poco._mod_path .. 'poco\\hud3_locale$.json'
 local LocationJSONFilename = Poco._mod_path .. 'poco\\hud3_rooms.json';
 
